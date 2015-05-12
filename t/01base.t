@@ -16,6 +16,6 @@ throws_ok { Math::EWMA->new(alpha => '0x02') } qr/not a number/, 'Constructor ne
 throws_ok { $e->precision('help') } qr/not a number/, 'precision() needs number';
 throws_ok { $e->ewma('help') } qr/numbers only/, 'ewma() needs number';
 
-throws_ok { $e->last_avg(1) } qr/read-only accessor/, 'last_avg() is read only';
-throws_ok { $e->alpha(1) } qr/read-only accessor/, 'alpha() is read only';
+throws_ok { $e->last_avg(1) } qr/read-only accessor|Usage/, 'last_avg() is read only';
+throws_ok { $e->alpha(1) } qr/read-only accessor|Usage/, 'alpha() is read only';
 
