@@ -34,8 +34,8 @@ cmp_ok($e->precision, '==', 3, 'precision is currently 3');
 cmp_ok($e->ewma, '==', 7.623, 'Current average is 7.223');
 
 #test new object can continue from a previous sequence
-my $e2 = Math::EWMA(alpha => .25, last_avg => 5.5);
+my $e2 = Math::EWMA->new(alpha => .25, last_avg => 5.5);
 
-$result = $e->ewma(13.99);
+$result = $e2->ewma(13.99);
 cmp_ok($result, '==', 7.62, 'Current average is 7.62');
 
