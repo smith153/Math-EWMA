@@ -1,4 +1,7 @@
 Revision history for Math-EWMA
 
+0.02	2015-05-19
+	- Fix tests with irrational floats
+
 0.01	2015-05-12
 	- First release
