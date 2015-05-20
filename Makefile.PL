@@ -11,7 +11,7 @@ WriteMakefile(
 		'namespace::autoclean' => '0',
 		'Test::Exception' => '0',
 		'Test::More' => '0',
-		'Moo' => '0',
+		'Moo' => '1.001000',
 		'Scalar::Util' => '0', 
 	},
 	'LICENSE' => 'perl_5',
