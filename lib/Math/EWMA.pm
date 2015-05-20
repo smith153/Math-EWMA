@@ -3,7 +3,7 @@ use Moo;
 use namespace::autoclean;
 use Scalar::Util qw(looks_like_number);
 
-our $VERSION = '0.01';
+our $VERSION = '0.03';
 $VERSION = eval $VERSION;
 
 
